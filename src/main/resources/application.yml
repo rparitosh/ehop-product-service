@@ -1,0 +1,15 @@
+server:
+  port: 9011
+
+spring:
+  application:
+    name: product-service
+
+  datasource:
+    url: jdbc:mysql://mysql-service/eshop-product
+    username: root
+    password: Marquis@1980
+  jpa:
+    hibernate:
+      ddl-auto=update: update
+
