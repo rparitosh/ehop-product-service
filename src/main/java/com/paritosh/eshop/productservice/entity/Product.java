@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @Slf4j
 public class Product {
     @Id
-    Long Id;
-    String Name;
+    Long id;
+    String name;
     String description;
 }

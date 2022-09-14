@@ -11,8 +11,5 @@ spring:
     password: Marquis@1980
   jpa:
     hibernate:
-      ddl-auto=update: update
-
-logging:
-  level:
-    root: debug
+      ddl-auto: update
+    generate-ddl: true
