@@ -20,6 +20,17 @@ spec:
         imagePullPolicy: Always
         ports:
           - containerPort: 9011
+        env:
+          - name: DB_USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: mysecret
+                key: mysql_username
+          - name: DB_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: mysecret
+                key: mysql_password
 ---
 
 apiVersion: v1

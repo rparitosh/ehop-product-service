@@ -7,8 +7,8 @@ spring:
 
   datasource:
     url: jdbc:mysql://mysql-service/eshop-product?useSSL=false
-    username: $mysql_username
-    password: $mysql_password
+    username: $DB_USERNAME
+    password: $DB_PASSWORD
   jpa:
     hibernate:
       ddl-auto: update
