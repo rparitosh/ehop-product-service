@@ -43,7 +43,10 @@ spec:
   ports:
   - port: 9011
     targetPort: 9011
+    nodePort: 30011
+    name: http
   type: NodePort
+
 
           
     
