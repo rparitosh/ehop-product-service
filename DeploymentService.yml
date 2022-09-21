@@ -24,12 +24,12 @@ spec:
           - name: DB_USERNAME
             valueFrom:
               secretKeyRef:
-                name: mysecret
+                name: eshop-mysql-db-secrets
                 key: mysql_username
           - name: DB_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: mysecret
+                name: eshop-mysql-db-secrets
                 key: mysql_password
 ---
 
